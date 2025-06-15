@@ -1,0 +1,32 @@
+# Hi Kuya Van
+print ("Hello, I'm a calculator :]] ")
+
+n1 = int(input("What's your first number?"))
+
+n2 = int(input("What's your second number?"))
+
+print("What is your prefered operation to use?")
+print("1) Addition")
+print("2) Subtraction")
+print("3) Multiplication")
+print("4) Division")
+    
+operation = int(input("input your prefered operation?"))
+
+if operation == 1:
+    result = n1 + n2
+    print("your answer is", result)
+elif operation == 2:
+    result = n1 - n2
+    print("your answer is", result)
+elif operation == 3:
+    result = n1 * n2
+    print("your answer is", result)
+elif operation == 4:
+    if n2 != 0:
+        result = n1 / n2    
+        print ("your answer is", result)
+    else:
+        print ("Sorry I can't compute that")
+else:
+    print ("Error! input a valid operation")
