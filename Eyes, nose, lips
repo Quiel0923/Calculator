@@ -1,0 +1,26 @@
+def iLoveYou(language):
+    if language == "Spanish":
+        word = "te amo"
+    
+    elif language == "Tagalog":
+        word = "Mahal kita"
+    
+    elif language == "English":
+        word = "I love you"
+    
+    elif language == "Korean":
+        word = "Saranghae"
+    
+    elif language == "French":
+        word = "Bonjour"
+        
+    else:
+        print("Sorry language not supported")
+    
+
+
+    print(f"In {language}, I love you is: {word}")
+
+user_language = input("In what language would you like to say 'I love you'? ")
+
+iLoveYou(user_language)
