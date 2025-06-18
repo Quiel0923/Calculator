@@ -1,0 +1,58 @@
+print("Calculator")
+
+
+print("What operation would you like to use?")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+print("5. Remainder")
+print("6. Exponent")
+print("7. Exit")
+
+operation = int(input("What is your preferred operation?"))
+
+def addition(a,b):
+    print(f"your answer is {a+b}")
+    
+def subtraction(a,b):
+    print(f"your answer is {a-b}")
+    
+def multiplication(a,b):
+    print(f"your answer is {a*b}")
+    
+def division(a,b):
+    if b != 0:
+        print(f"your answer is {a/b}")
+    else:
+        print("Sorry can't do that")
+        
+def remainder(a,b):
+    if a > b:
+        print(f"your answer is {a%b}")
+    else:
+        print("errmmm wattasigma?")
+
+def exponent(a,b):
+    print(f"your answer is {a**b}")
+
+if operation == 7:
+    print("dude, ayos operation")
+elif 0 < operation < 7:
+    num1 = int(input("What's your first number? "))
+    num2 = int(input("What's your second number? "))
+    
+    if operation == 1:
+        addition(num1,num2)
+    elif operation == 2:
+        subtract(num1, num2)
+    elif operation == 3:
+        multiply(num1, num2)
+    elif operation == 4:
+        division(num1, num2)
+    elif operation == 5:
+        remainder(num1, num2)
+    elif operation == 6:
+        exponent(num1, num2)
+else:
+    print("Sorry, input an appropriate operation.")
